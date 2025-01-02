@@ -1,0 +1,16 @@
+{
+    "name": "aleksandr-code/arch_futurio",
+    "description": "Tasks from course futurio-arhitecture",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aleksandr-code",
+            "email": "70668106+Aleksandr-code@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
