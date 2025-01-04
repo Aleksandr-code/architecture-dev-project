@@ -12,8 +12,6 @@ class Movement
        $oldPosition = $moveObject->getPosition();
        $velocity = $moveObject->getVelocity();
 
-       //$distance = Vector::MultiplicateTwoVector($oldPosition, $velocity);
-
        $newPosition = Vector::SumTwoVector($oldPosition, $velocity);
 
        $moveObject->setPosition($newPosition);

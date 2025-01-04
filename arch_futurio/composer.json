@@ -12,5 +12,7 @@
             "email": "70668106+Aleksandr-code@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
 }
