@@ -2,7 +2,7 @@
 
 1) Complexity Level #1 (+) <br>
    _Примечание: Рассмотреть ещё раз логику поворота вокруг оси._<br>
-2) Complexity Level #2
+2) Complexity Level #2 (+-) <br>
 3) Complexity Level #3
 
 #### Проект:

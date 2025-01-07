@@ -1,5 +1,10 @@
 #### Выполнено:
 
+1) Complexity Level #1 (+) <br>
+   _Примечание: Реализовано удаление не по ключу, а замена скорости на новое нулевое значение._<br>
+2) Complexity Level #2 <br>
+3) Complexity Level #3 <br>
+4) Complexity Level #4 <br>
 
 #### Проект:
 
