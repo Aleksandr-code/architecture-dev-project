@@ -13,16 +13,16 @@ class MovableAdapter implements IMovable
 
     public function getPosition(): Vector
     {
-        return $this->object["position"];
+        return $this->object['position'];
     }
 
     public function setPosition(Vector $position): void
     {
-        $this->object["position"] = $position;
+        $this->object['position'] = $position;
     }
 
     public function getVelocity()
     {
-        return $this->object["velocity"];
+        return $this->object['velocity'];
     }
 }
