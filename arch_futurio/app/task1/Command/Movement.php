@@ -9,11 +9,16 @@ class Movement
 {
     public function move(IMovable $moveObject):void
     {
-       $oldPosition = $moveObject->getPosition();
-       $velocity = $moveObject->getVelocity();
+        try{
+            $oldPosition = $moveObject->getPosition();
+            $velocity = $moveObject->getVelocity();
 
-       $newPosition = Vector::SumTwoVector($oldPosition, $velocity);
+            $newPosition = Vector::SumTwoVector($oldPosition, $velocity);
 
-       $moveObject->setPosition($newPosition);
+            $moveObject->setPosition($newPosition);
+        } catch (\Exception $exception){
+            throw new \Exception($exception);
+        }
+
     }
 }

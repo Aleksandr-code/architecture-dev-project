@@ -25,4 +25,55 @@ class MovementTest extends TestCase
         $this->assertEquals($expected, $movableObject->getPosition());
     }
 
+    public function testMoveCommandDontGetPositionException():void
+    {
+        $moveCommand = new Movement();
+
+        $movableObject = new class extends GameObject{
+            public function getPosition(): Vector
+            {
+                throw new Exception("Don't get position");
+            }
+        };
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage("Don't get position");
+
+        $moveCommand->move($movableObject);
+    }
+
+    public function testMoveCommandDontGetVelocityException():void
+    {
+        $moveCommand = new Movement();
+
+        $movableObject = new class extends GameObject{
+            public function getVelocity(): Vector
+            {
+                throw new Exception("Don't get velocity");
+            }
+        };
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage("Don't get velocity");
+
+        $moveCommand->move($movableObject);
+    }
+
+    public function testMoveCommandDontSetPositionException():void
+    {
+        $moveCommand = new Movement();
+
+        $movableObject = new class extends GameObject{
+            public function setPosition(Vector $vector): void
+            {
+                throw new Exception("Don't set position");
+            }
+        };
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage("Don't set position");
+
+        $moveCommand->move($movableObject);
+    }
+
 }
